@@ -5,10 +5,11 @@ window = Tk()
 window.title("Real time clock")
 # window.geometry("250x100")
 window.configure(bg="black")
-window.resizable(False, False)
+window.resizable(True, True)
 
 time_label = Label(window, bg="black", fg="white", font=("Times", 30, "bold"), relief="flat")
-time_label.pack(ipadx=50,ipady=30)
+# time_label.pack(ipadx=50,ipady=30)
+time_label.place(relx=0.5,rely=0.5,anchor="center")
 
 
 def update_label():
